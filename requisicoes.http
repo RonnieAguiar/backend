@@ -1,0 +1,19 @@
+GET http://localhost:3030/produtos
+
+###
+POST http://localhost:3030/produtos HTTP/1.1
+Content-Type: application/json
+
+{
+    "nome": "Raquete Mosquiteira",
+    "descricao": "Deixa os zoadores ligados no Volts",
+    "preco": 123.78
+}
+
+###
+PATCH http://localhost:3030/produtos/1 HTTP/1.1
+Content-Type: application/json
+
+{
+    "descricao": "Deixa os Zoadores ligados no Volts"
+}
